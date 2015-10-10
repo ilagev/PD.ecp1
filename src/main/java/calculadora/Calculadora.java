@@ -1,21 +1,33 @@
 package calculadora;
 
+import upm.jbb.IO;
+
 public class Calculadora {
-    
+
+    private int total;
+
     public void sumar() {
-        // TODO
+        total += IO.getIO().readInt();
     }
-    
+
     public void restar() {
-        // TODO      
+        total -= IO.getIO().readInt();
     }
-    
+
     public void reset() {
-        // TODO
+        this.setTotal(0);
     }
-    
+
     public void print() {
-        // TODO
+        IO.getIO().println(total);
+    }
+
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
     }
 
 }

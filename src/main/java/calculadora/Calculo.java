@@ -7,5 +7,10 @@ public abstract class Calculo implements Comando {
     public Calculo(Calculadora calculadora) {
         this.calculadora = calculadora;
     }
+    
+    @Override
+    public String toString() {
+        return this.name();
+    }
 
 }
