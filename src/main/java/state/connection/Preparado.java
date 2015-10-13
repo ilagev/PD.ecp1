@@ -1,38 +1,39 @@
 package state.connection;
 
-public class Preparado extends State {
+public class Preparado extends Estado {
     
     public Preparado() {
         
     }
     
     @Override
-    public void parar(Connection connection) {
+    public void parar(Conexion connection) {
         connection.setState(new Parado());
     }
     
     @Override
-    public void iniciar(Connection connection) {
+    public void iniciar(Conexion connection) {
         connection.setState(this);
     }
     
     @Override
-    public void abrir(Connection connection) {
+    public void abrir(Conexion connection) {
         connection.setState(this);
     }
     
     @Override
-    public void recibir(Connection connection, int respuesta) throws UnsupportedOperationException {
+    public void recibir(Conexion connection, int respuesta) throws UnsupportedOperationException {
         throw new UnsupportedOperationException();
     }
     
     @Override
-    public void cerrar(Connection connection) {
+    public void cerrar(Conexion connection) {
         connection.setState(new Cerrado());
     }
     
     @Override
-    public void enviar(Connection connection, String mensaje)  {
+    public void enviar(Conexion connection, String mensaje)  {
+        connection.getLink().enviar(mensaje);
         connection.setState(new Esperando());
     }
 

@@ -1,10 +1,16 @@
 package state.connection;
 
-public class Connection {
-    private State state;
+public class Conexion {
+    private Estado state;
+    private Link link;
     
-    public Connection() {
+    public Conexion() {
         state = new Cerrado();
+    }
+    
+    public Conexion(Link link) {
+        this();
+        this.link = link;
     }
     
     public void parar() {
@@ -31,8 +37,16 @@ public class Connection {
         state.enviar(this, mensaje);
     }
     
-    public void setState(State state) {
+    public void setState(Estado state) {
         this.state = state;
+    }
+    
+    public Estado getEstado() {
+        return state;
+    }
+    
+    public Link getLink() {
+        return link;
     }
     
 }

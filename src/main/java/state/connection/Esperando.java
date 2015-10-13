@@ -1,43 +1,44 @@
 package state.connection;
 
-public class Esperando extends State {
-
+public class Esperando extends Estado {
+    
     public Esperando() {
 
     }
 
     @Override
-    public void parar(Connection connection) throws UnsupportedOperationException {
+    public void parar(Conexion connection) throws UnsupportedOperationException {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    public void iniciar(Connection connection) throws UnsupportedOperationException {
+    public void iniciar(Conexion connection) throws UnsupportedOperationException {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    public void abrir(Connection connection) throws UnsupportedOperationException {
+    public void abrir(Conexion connection) throws UnsupportedOperationException {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    public void recibir(Connection connection, int respuesta) {
+    public void recibir(Conexion connection, int respuesta) {
         if (respuesta == 0) {
-            connection.setState(new Cerrado());
-        } else {
             connection.setState(new Preparado());
+        } else {
+            connection.setState(new Cerrado());
         }
     }
 
     @Override
-    public void cerrar(Connection connection) throws UnsupportedOperationException {
+    public void cerrar(Conexion connection) throws UnsupportedOperationException {
         throw new UnsupportedOperationException();
     }
     
     @Override
-    public void enviar(Connection connection, String mensaje) throws UnsupportedOperationException {
+    public void enviar(Conexion connection, String mensaje) throws UnsupportedOperationException {
         throw new UnsupportedOperationException();
     }
+
 
 }
