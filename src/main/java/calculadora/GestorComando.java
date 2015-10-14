@@ -3,11 +3,11 @@ package calculadora;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MainCalculator {
+public class GestorComando {
     
     private Map<String, Comando> comandos;
     
-    public MainCalculator()  {
+    public GestorComando()  {
         this.comandos = new HashMap<>();
     }
     
