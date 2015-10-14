@@ -1,6 +1,6 @@
 package state.connection.test;
 
-import state.connection.Link;
+import es.upm.miw.PD.ecp1.state.connection.Link;
 
 public final class LinkMock implements Link {
     private String msg;

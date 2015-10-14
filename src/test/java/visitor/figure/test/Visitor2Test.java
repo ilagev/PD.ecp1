@@ -8,10 +8,10 @@ import java.util.Collection;
 import org.junit.Before;
 import org.junit.Test;
 
-import visitor.figure.ElementA;
-import visitor.figure.ElementB;
-import visitor.figure.Element;
-import visitor.figure.Visitor2;;
+import es.upm.miw.PD.ecp1.visitor.figure.Element;
+import es.upm.miw.PD.ecp1.visitor.figure.ElementA;
+import es.upm.miw.PD.ecp1.visitor.figure.ElementB;
+import es.upm.miw.PD.ecp1.visitor.figure.Visitor2;;
 
 public class Visitor2Test {
     private Collection<Element> coleccion = new ArrayList<Element>();
