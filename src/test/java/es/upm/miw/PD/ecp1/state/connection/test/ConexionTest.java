@@ -1,4 +1,4 @@
-package state.connection.test;
+package es.upm.miw.PD.ecp1.state.connection.test;
 
 import org.junit.Before;
 import org.junit.Test;

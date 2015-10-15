@@ -1,4 +1,4 @@
-package visitor.figure.test;
+package es.upm.miw.PD.ecp1.visitor.figure.test;
 
 import static org.junit.Assert.assertEquals;
 
@@ -11,7 +11,7 @@ import org.junit.Test;
 import es.upm.miw.PD.ecp1.visitor.figure.Element;
 import es.upm.miw.PD.ecp1.visitor.figure.ElementA;
 import es.upm.miw.PD.ecp1.visitor.figure.ElementB;
-import es.upm.miw.PD.ecp1.visitor.figure.Visitor2;;
+import es.upm.miw.PD.ecp1.visitor.figure.Visitor2;
 
 public class Visitor2Test {
     private Collection<Element> coleccion = new ArrayList<Element>();
