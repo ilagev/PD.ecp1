@@ -18,5 +18,9 @@ public class NumberSides implements Visitor {
     public void visitTriangle(Triangle triangle) {
         totalSides += Triangle.NUMBER_SIDES;
     }
+    
+    public double getTotalSides() {
+        return totalSides;
+    }
 
 }

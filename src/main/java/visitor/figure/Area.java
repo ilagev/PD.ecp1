@@ -18,5 +18,9 @@ public class Area implements Visitor {
     public void visitTriangle(Triangle triangle) {
         totalArea += triangle.getBase() * triangle.getHeight() / 2;
     }
+    
+    public double getTotalArea() {
+        return totalArea;
+    }
 
 }
