@@ -1,4 +1,4 @@
-package visitor.figure;
+package visitor;
 
 public class ElementA implements Element {
     private String attributeA;

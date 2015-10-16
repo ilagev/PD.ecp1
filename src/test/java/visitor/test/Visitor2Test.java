@@ -1,4 +1,4 @@
-package visitor.figure.test;
+package visitor.test;
 
 import static org.junit.Assert.assertEquals;
 
@@ -8,10 +8,10 @@ import java.util.Collection;
 import org.junit.Before;
 import org.junit.Test;
 
-import visitor.figure.Element;
-import visitor.figure.ElementA;
-import visitor.figure.ElementB;
-import visitor.figure.Visitor2;
+import visitor.Element;
+import visitor.ElementA;
+import visitor.ElementB;
+import visitor.Visitor2;
 
 public class Visitor2Test {
     private Collection<Element> coleccion = new ArrayList<Element>();

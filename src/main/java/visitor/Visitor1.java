@@ -1,4 +1,4 @@
-package visitor.figure;
+package visitor;
 
 public class Visitor1 extends Visitor {
 

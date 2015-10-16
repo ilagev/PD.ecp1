@@ -1,4 +1,4 @@
-package visitor.figure;
+package visitor;
 
 public interface Element {
     void accept(Visitor v);

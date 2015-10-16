@@ -1,7 +1,11 @@
 package visitor.figure;
 
-public abstract class Visitor {
-    public abstract void visitElementA(ElementA e);
+public interface Visitor {
+    
+    public void visitCircle(Circle circle);
+    
+    public void visitSquare(Square square);
+    
+    public void visitTriangle(Triangle triangle);
 
-    public abstract void visitElementB(ElementB e);
 }

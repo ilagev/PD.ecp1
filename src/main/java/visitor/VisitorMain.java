@@ -1,4 +1,4 @@
-package visitor.figure;
+package visitor;
 
 import java.util.ArrayList;
 import java.util.Collection;
